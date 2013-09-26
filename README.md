@@ -44,7 +44,7 @@ You can specify options by creating a file named `settings.py` in the directory 
 
 Currently supported options:
 
-* `SLEEP_BETWEEN_PAGES` - the time which Grinder will wait after loading the first page before proceeding to the next.
+* `SLEEP_BETWEEN_PAGES` - the time which Grinder will wait after loading the first page before proceeding to the next [milliseconds].
 * `EXCLUDED_DOMAINS` - a tuple, which list domains for files hosted by external CDNs, which are not part of your test.
 
 
