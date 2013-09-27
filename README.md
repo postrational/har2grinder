@@ -34,7 +34,7 @@ Converting a HAR file to a Grinder test
 
 To convert the recorded navigation to a Grinder test, run the `har2grinder` script:
 
-    python har2grinder.py my_website_test.har
+    python har2grinder.py my_website_test.har > my_website_grinder_test.py
 
 
 Settings
@@ -47,6 +47,11 @@ Currently supported options:
 * `SLEEP_BETWEEN_PAGES` - the time which Grinder will wait after loading the first page before proceeding to the next [milliseconds].
 * `EXCLUDED_DOMAINS` - a tuple, which list domains for files hosted by external CDNs, which are not part of your test.
 
+
+Known limitations
+-----------------
+
+* no support for websockets
 
 [grinder]: http://grinder.sourceforge.net  "The Grinder, a Java Load Testing Framework"
 [har]: https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html "HTTP Archive (HAR) format"
