@@ -28,6 +28,7 @@ Recording a test using Chrome DevTools
 
 7. After you navigate to the pages you want to test, right-click on the network history panel and choose "Copy All as HAR". Save the clipboard to a .har file.
 
+For more information check out [my blog post][blog].
 
 Converting a HAR file to a Grinder test
 ---------------------------------------
@@ -55,3 +56,4 @@ Known limitations
 
 [grinder]: http://grinder.sourceforge.net  "The Grinder, a Java Load Testing Framework"
 [har]: https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html "HTTP Archive (HAR) format"
+[blog]: http://michal.karzynski.pl/blog/2013/09/28/website-performance-script-for-the-grinder-using-har2grinder/ "Recording a website performance test for The Grinder using Chrome DevTools"
