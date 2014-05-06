@@ -207,6 +207,11 @@ def createRequest(test, url, headers=None):
 
 connectionDefaults.defaultHeaders = []
 
+# without this, the grinder seems to remove the cookies we might have in
+# our headers.
+# http://grinder.sourceforge.net/g3/http-plugin.html
+connectionDefaults.useCookies = 0
+
 # HEADER LIBRARY SECTION
 %s
 
