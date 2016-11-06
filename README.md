@@ -16,17 +16,17 @@ Recording a test using Chrome DevTools
 
 1. Fire up Chrome and open the DevTools.
 
-2. Click the gear icon in the bottom right corner and disable the cache.
+2. Open the Network tab of the DevTools.
 
-3. Open the Network tab of the DevTools.
+4. Clear the Network history ("no entry" icon).
 
-4. Clear the Network history ("no entry" icon at bottom).
+5. Choose the option to `Preserve log` upon navigation.
 
-5. Choose the option to Preserve Log upon navigation (circle icon turns red).
+5. Choose the option to `Disable cache`.
 
 6. Navigate around your site.
 
-7. After you navigate to the pages you want to test, right-click on the network history panel and choose "Copy All as HAR". Save the clipboard to a .har file.
+7. After you navigate to the pages you want to test, right-click on the network history panel and choose "Copy > Copy All as HAR". Save the clipboard to a .har file.
 
 For more information check out [my blog post][blog].
 
