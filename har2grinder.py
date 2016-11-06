@@ -55,8 +55,9 @@ def prepare_entry_request_call(entry):
     post_data = request.get('postData')
     if post_data:
         param_code = ''
-        for parameter in post_data.get('params'):
-            param_code += "            NVPair('%s', '%s'),\n" % (parameter.get('name'), parameter.get('value'))
+        if post_data.get('params'):
+            for parameter in post_data.get('params'):
+                param_code += "            NVPair('%s', '%s'),\n" % (parameter.get('name'), parameter.get('value'))
 
         param_code = param_code[12:-1]
         request_call = "        request%i.%s('%s', (%s))\n" % (test_number, method, grinder_path, param_code)
